@@ -19,27 +19,22 @@ return [0, 1].
 
 class Solution {
 public:
-vector<int> twoSum(vector<int> &numbers, int target) 
-{
+vector<int> twoSum(vector<int> &numbers, int target) {
     unordered_map <int, int> table;
     vector<int> resu;
     int i, N = numbers.size();
-    for (i = 0; i < N; i++)
-    {
+    for (i = 0; i < N; i++) {
         table[numbers[i]] = i;
     }
     int temp;
-    for (i = 0; i < N; i++)
-    {
-        temp = target-numbers[i];
-       
-        if (table.find(temp) != table.end() && table[temp] != i) //find
-        {
+    for (i = 0; i < N; i++) {
+        temp = target-numbers[i];  
+        if (table.find(temp) != table.end() && table[temp] != i) {
             resu.push_back(i);
             resu.push_back(table[temp]);
             return resu;
         }
     }
     return resu;
-}
+  }
 };
