@@ -24,17 +24,17 @@ You can assume that you can always reach the last index.
 class Solution {
 public:
     int jump(vector<int>& nums) {
-        if (nums.size()<=1) return 0;
+        if (nums.size() <= 1) return 0;
         int maxPos = 0, count = 0, preMaxPos = 0;
-        for (int i=0; i<nums.size(); i++)
+        for (int i = 0; i < nums.size(); i++)
         {
-            maxPos = max (maxPos, i+nums[i]);
-            if (i==preMaxPos) {
+            maxPos = max(maxPos, i+nums[i]);
+            if (i == preMaxPos) {
                 count++;
-                preMaxPos=maxPos;
+                preMaxPos = maxPos;
             }
             //if (maxPos >= nums.size()-1) { <-made a mistake here
-            if (preMaxPos>=nums.size()-1) {
+            if (preMaxPos >= nums.size()-1) {
                 return count;
             }
         }
