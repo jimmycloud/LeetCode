@@ -2,7 +2,7 @@
 // Author : Jimmy Liu
 // Date   : 2017-01-22
 // Reference
-// Idea: keep a record of previous max position that can be reached, when iterator touches this pre max pos, update it as well as count
+// Idea: keep a record of previous max position that can be reached. When iterator moves to this position, update the new max position and count.
 
 /*
 Given an array of non-negative integers, you are initially positioned at the first index of the array.
