@@ -24,7 +24,7 @@ public:
         int max_reach = 0; //max_reach indicates the max index that can be jumped from current position, base 0
         for (int i = 0; i < len; i++)
         {
-            max_reach = max(max_reach, i+nums[i]);//max_reach = max(max_reach, (max_reach>=i)?(i+nums[i]):i);
+            max_reach = max(max_reach, i + nums[i]);//max_reach = max(max_reach, (max_reach>=i)?(i+nums[i]):i);
             if (max_reach >= len-1) return true;
             if (max_reach < i+1) return false;
         }
