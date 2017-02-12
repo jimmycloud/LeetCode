@@ -2,7 +2,7 @@
 // Author : Jimmy Liu
 // Date   : 2017-01-21
 // Reference
-// Idea: check the max further steps can be obtained from current position of array.
+// Idea: check the max index that can be reached from current position.
 
 /*
 Given an array of non-negative integers, you are initially positioned at the first index of the array.
