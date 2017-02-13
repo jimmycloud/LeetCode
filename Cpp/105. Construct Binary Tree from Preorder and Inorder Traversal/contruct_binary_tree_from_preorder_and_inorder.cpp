@@ -36,7 +36,7 @@ TreeNode * buildTreeAssis(vector<int>& preorder, vector<int>& inOrder, int preBe
     if (inOrder[cut] == preOrder[preBegin]) 
         break;
   }
-  int leftLen = cut - inBegin, rightLen = inEnd-cut;
+  int leftLen = cut - inBegin, rightLen = inEnd - cut;
   p->left = buildTreeAssis(preOrder, inOrder, preBegin + 1, preBegin + leftLen, inBegin, cut-1);
   p->right = buildTreeAssis(preOrder, inOrder, preBegin+leftLen+1, preEnd, cut+1, inEnd);
   return p;
