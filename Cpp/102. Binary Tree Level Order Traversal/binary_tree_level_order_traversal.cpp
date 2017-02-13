@@ -2,7 +2,7 @@
 // Author : Jimmy Liu
 // Date   : 2017-02-13
 // Reference: 
-// Idea: 
+// Idea:
 
 /*
 Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
